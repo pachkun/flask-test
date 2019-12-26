@@ -2,24 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b19d4fd-f736-4ea5-8330-d06fbc36f771" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/edit_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/636c2c12c5c6_new_field_in_user_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="user: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FileColors">
     <fileColor scope="Problems" color="Orange" />
@@ -157,7 +190,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:app" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:app" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@367d5cae" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -184,7 +227,7 @@
       <workItem from="1577275977908" duration="2923000" />
       <workItem from="1577280449406" duration="199000" />
       <workItem from="1577280682999" duration="4335000" />
-      <workItem from="1577340445700" duration="10774000" />
+      <workItem from="1577340445700" duration="14619000" />
     </task>
     <task id="LOCAL-00001" summary="v0.1">
       <created>1577276956458</created>
@@ -214,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577351847864</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v0.5">
+      <created>1577362232900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577362232900</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +300,8 @@
     <MESSAGE value="v0.2" />
     <MESSAGE value="v0.3" />
     <MESSAGE value="v0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.4" />
+    <MESSAGE value="v0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.5" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -280,10 +331,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="757" y="199" key="#index.html/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1576755791015" />
-    <state x="585" y="113" key="CommitChangelistDialog2" timestamp="1577362221101">
+    <state x="585" y="113" key="CommitChangelistDialog2" timestamp="1577362232289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="113" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577362221101" />
+    <state x="585" y="113" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577362232289" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1577344895884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -304,22 +355,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="760" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577274890593" />
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1577362213678">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1577364504242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577362213678" />
-    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1577362213678">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577364504242" />
+    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1577364504242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577362213678" />
-    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1577362213678">
+    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577364504242" />
+    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1577364504242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577362213678" />
-    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1577362213678">
+    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577364504242" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1577364504242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577362213678" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1200@0.0.1920.1040" timestamp="1577364504242" />
     <state width="1876" height="327" key="GridCell.Tab.1.bottom" timestamp="1576760105262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -359,6 +410,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_test$microblog.coverage" NAME="microblog Coverage Results" MODIFIED="1577278245819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_test$Flask__microblog_py_app_.coverage" NAME="Flask (microblog.py:app) Coverage Results" MODIFIED="1577362091894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_test$Flask__microblog_py_app_.coverage" NAME="Flask (microblog.py:app) Coverage Results" MODIFIED="1577364504235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
