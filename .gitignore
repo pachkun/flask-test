@@ -228,5 +228,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-/.idea/**
+.idea/
 /app.db
