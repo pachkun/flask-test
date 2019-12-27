@@ -4,9 +4,11 @@ __author__ = 'pachkun'
 import logging
 import os
 from logging.handlers import SMTPHandler, RotatingFileHandler
+from threading import Thread
 
 from flask import Flask
 from flask_login import LoginManager
+from flask_mail import Mail, Message
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
@@ -19,6 +21,21 @@ login.login_view = 'login'
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+
+mail = Mail(app)
+
+
+def send_async_email(app, msg):
+    with app.app_context():
+        mail.send(msg)
+
+
+def send_email(subject, sender, recipients, text_body, html_body):
+    msg = Message(subject, sender=sender, recipients=recipients)
+    msg.body = text_body
+    msg.html = html_body
+    Thread(target=send_async_email, args=(app, msg)).start()
+
 
 if not app.debug:
     if app.config['MAIL_SERVER']:
