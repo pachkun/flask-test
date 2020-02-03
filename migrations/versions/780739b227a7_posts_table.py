@@ -1,16 +1,16 @@
 """posts table
 
-Revision ID: 1a506191dc1b
-Revises: 355c256f0d4f
-Create Date: 2019-12-26 11:43:03.219161
+Revision ID: 780739b227a7
+Revises: e517276bb1c2
+Create Date: 2017-09-11 12:23:25.496587
 
 """
 import sqlalchemy as sa
 from alembic import op
 
 # revision identifiers, used by Alembic.
-revision = '1a506191dc1b'
-down_revision = '355c256f0d4f'
+revision = '780739b227a7'
+down_revision = 'e517276bb1c2'
 branch_labels = None
 depends_on = None
 
